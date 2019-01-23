@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Lambda for the "Latest House of Commons Vote" skill
+Resources:
+  commonsVote:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs8.10
+      CodeUri: .
+      Description: Lambda for the "Latest House of Commons Vote" skill
+      MemorySize: 128
+      Timeout: 3
+      Role: 'simpleMicroservice'
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill

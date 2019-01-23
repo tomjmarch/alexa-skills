@@ -1,0 +1,9 @@
+{
+    "SKILL_NAME": "House of Commons Vote Results",
+    "HELP_MESSAGE": "You can ask me the for the latest commons vote result, or, you can say exit...",
+    "HELP_REPROMPT": "Ask me for the latest commons vote result.",
+    "FALLBACK_MESSAGE": "Im sorry, Im not sure what you mean. Try asking me for the latest commons vote result.",
+    "FALLBACK_REPROMPT": "Ask me for the latest commons vote result.",
+    "ERROR_MESSAGE": "Sorry, an error occurred.",
+    "STOP_MESSAGE": "Bye bye!"
+}

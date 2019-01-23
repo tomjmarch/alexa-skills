@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Pick a random holiday destination and fact
+Resources:
+  pickRandomDestination:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: .
+      Description: Pick a random holiday destination and fact
+      MemorySize: 128
+      Timeout: 7
+      Role: 'simpleMicroservice'
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill
+      Tags:
+        'lambda-console:blueprint': alexa-skill-kit-sdk-factskill
