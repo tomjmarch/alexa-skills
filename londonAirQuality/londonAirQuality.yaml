@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: Provide the latest London Air Quality data from TfL
+Resources:
+  londonAirQuality:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs6.10
+      CodeUri: .
+      Description: Provide the latest London Air Quality data from TfL
+      MemorySize: 128
+      Timeout: 7
+      Role: 'simpleMicroservice'
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill

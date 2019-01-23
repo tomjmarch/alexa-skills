@@ -1,0 +1,8 @@
+{
+  "name": "alexa-skill-london-air-quality",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "ask-sdk-core": "^2.3.0"
+  }
+}

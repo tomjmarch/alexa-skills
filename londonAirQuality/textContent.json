@@ -1,0 +1,10 @@
+{
+    "SKILL_NAME": "London Air Quality",
+    "START_OF_MESSAGE": "Heres the latest air quality forecast for London... ",
+    "HELP_MESSAGE": "You can ask me the for the latest air quality forecast, or, you can say exit...",
+    "HELP_REPROMPT": "Ask me for the latest air quality forecast.",
+    "FALLBACK_MESSAGE": "Im sorry, Im not sure what you mean. Try asking me for the latest air quality forecast.",
+    "FALLBACK_REPROMPT": "Ask me for the latest air quality forecast.",
+    "ERROR_MESSAGE": "Sorry, an error occurred.",
+    "STOP_MESSAGE": "Bye bye!"
+}
